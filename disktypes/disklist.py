@@ -195,3 +195,6 @@ class DiskList(object):
     # extra/non list functions
     def copy(self):
         return DiskList(self[:])
+
+    def serialize(self):
+        return self[:]
